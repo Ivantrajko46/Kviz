@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kviz</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid kviz-start-ekran">
+        <div class="row unosImena animated slideInRight">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="nameUser" placeholder="Unesite vase ime">
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <button class="btn btn-success btn-large w-100 kviz-start">START KVIZ</button>
+            </div>
+        </div>
+        <div class="mask-pozadina"></div>
+        <h1 class="animated slideInLeft">Moto Gp Kviz</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row navigation">
+            <div class="col-6">
+                <p class="kviz-takmicar-name">Takmicar:</p>
+            </div>
+            <div class="col-6">
+                <p class="kviz-timer">
+                    Timer: <span class="timer">00:00:00</span>
+                </p>
+                <button id="btn-pause" class="btn btn-info btn-large">
+                    <i class="fa fa-pause"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class="ekran ekran-1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="card text-white">
+                            <div class="card-header">
+                                <h5 class="card-title text-center"> 1. Za koji tim vozi Valentino Rossi?</h5>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="pitanje1-1" value="1" type="radio" name="pitanje1">
+                                                <label class="form-check-label" for="pitanje1-1">
+                                                    Ducati
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="pitanje1-2" value="2" type="radio" name="pitanje1">
+                                                <label class="form-check-label" for="pitanje1-2">
+                                                    Movistar Yamaha
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="pitanje1-3" value="3" type="radio" name="pitanje1">
+                                                <label class="form-check-label" for="pitanje1-3">
+                                                    Repsol Honda
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ekran ekran-2">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="card text-white">
+                            <div class="card-header">
+                                <h5 class="card-title text-center"> 2. Pored Jorgea Lorenca za Dukati nastupa i:</h5>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="pitanje2-1" value="1" type="checkbox" name="pitanje2">
+                                                <label class="form-check-label" for="pitanje2-1">
+                                                    Danilo Petruci
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="pitanje2-2" value="2" type="checkbox" name="pitanje2">
+                                                <label class="form-check-label" for="pitanje2-2">
+                                                    Andrea Ianone
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="pitanje2-3" value="3" type="checkbox" name="pitanje2">
+                                                <label class="form-check-label" for="pitanje2-3">
+                                                    Andrea Doviciozo
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ekran ekran-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="card text-white">
+                            <div class="card-header">
+                                <h5 class="card-title text-center"> 3. Koliko je titula u Moto 2 klasi osvoio Johan Zarco?</h5>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="pitanje3-1"></label>
+                                        <input type="number" id="pitanje3-1" name="pitanje3" placeholder="Unesite broj">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ekran ekran-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="card text-white">
+                            <div class="card-header">
+                                <h5 class="card-title text-center"> 4. Kako se zove staza u Ceskoj Republici?</h5>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <button class="btn btn-info btn-lg w-100" name="pitanje4" type="button" value="1">
+                                                Assen
+                                            </button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <button class="btn btn-info btn-lg w-100" name="pitanje4" type="button" value="2">
+                                                Mugello
+                                            </button>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <button class="btn btn-info btn-lg w-100" name="pitanje4" type="button" value="3">
+                                                Brno
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ekran ekran-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="card text-white">
+                            <div class="card-header">
+                                <h5 class="card-title text-center"> Takmicar : Ivan</h5>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <p class="broj-poena">
+                                                Osvojili sete 0 poena.
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p class="trajanje-kviza">
+                                                Kviz je trajao
+                                            </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <button type="reset" class="btn btn-success btn-large w-100">Reset</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <button class="btn btn-info btn-large kviz-btn-left">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="btn btn-info btn-large kviz-btn-right">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="modalPaused" tabindex="-1" role="dialog" aria-labelledby="modalPaused" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPaused">Kviz je zaustavljen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Nastavi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
+</html>
